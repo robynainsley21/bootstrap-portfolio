@@ -1,0 +1,121 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* general */
+:root {
+  --primary: #dba39a;
+  --secondary: #f0dbdb;
+  --complimentary: #f5ebe0;
+  --bg: #fefcf3;
+}
+
+@property --top-left {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 50%;
+}
+
+@property --top-right {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 50%;
+}
+
+@property --bottom-left {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 0%;
+}
+
+@property --bottom-right {
+  syntax: "<percentage>";
+  inherits: false;
+  initial-value: 0%;
+}
+
+header {
+  background-image: url("https://robynainsley21.github.io/images/personal-portfolio/soft-bg.png");
+  background-repeat: no-repeat;
+  object-fit: contain;
+  height: 100vh;
+}
+
+body {
+  background-color: var(--bg);
+  font-family: "Julius Sans One", sans-serif;
+}
+
+container{
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid{
+    padding: 0;
+}
+
+/* navbar */
+img[alt="logo"] {
+  width: 4rem;
+  border-radius: 100%;
+  /* aspect-ratio: 1/1; */
+  object-fit: cover;
+  object-position: center;
+  margin: auto 1rem;
+}
+
+.navbar{
+    font-weight: bold;
+}
+
+/* hero section */
+img[alt="hero-img"] {
+  width: 36%;
+  border-radius: 50%;
+}
+
+#hero {
+  display: flex;
+  justify-content: space-around;
+  padding: 15%;
+  align-items: center;
+  width: 100vw;
+}
+
+.hero-text{
+    width: 60%;
+}
+
+/* about section */
+#about{
+    background-color: var(--primary);
+}
+
+/* footer */
+footer{
+    background-color: var(--secondary);
+    padding: 1rem;
+}
+
+/* media queries */
+/* mobile */
+@media screen and (max-width: 768px) {
+  /* hero */
+  #hero {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 20%;
+
+  } 
+}

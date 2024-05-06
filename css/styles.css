@@ -64,11 +64,11 @@ img[alt="logo"] {
   margin: auto 1rem;
 }
 
-nav{
+nav {
   background: inherit;
 }
 
-.offcanvas{
+.offcanvas {
   background-color: var(--bg);
 }
 
@@ -86,19 +86,19 @@ img[alt="hero-img"] {
   width: 100vw;
 }
 
-.hero-text{
-    width: 60%;
+.hero-text {
+  width: 60%;
 }
 
 /* about section */
-#about{
-    background-color: var(--primary);
+#about {
+  background-color: var(--primary);
 }
 
 /* footer */
-footer{
-    background-color: var(--secondary);
-    padding: 1rem;
+footer {
+  background-color: var(--secondary);
+  padding: 1rem;
 }
 
 /* media queries */

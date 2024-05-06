@@ -74,14 +74,14 @@ nav{
 
 /* hero section */
 img[alt="hero-img"] {
-  width: 36%;
+  width: 20rem;
   border-radius: 50%;
 }
 
 #hero {
   display: flex;
   justify-content: space-around;
-  padding: 15%;
+  padding: 9%;
   align-items: center;
   width: 100vw;
 }
@@ -103,14 +103,3 @@ footer{
 
 /* media queries */
 /* mobile */
-@media screen and (max-width: 768px) {
-  /* hero */
-  #hero {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding-top: 20%;
-
-  } 
-}

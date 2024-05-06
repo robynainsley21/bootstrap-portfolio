@@ -54,27 +54,22 @@ body {
   font-family: "Julius Sans One", sans-serif;
 }
 
-container{
-    margin: 0;
-    padding: 0;
-}
-
-.container-fluid{
-    padding: 0;
-}
-
 /* navbar */
 img[alt="logo"] {
   width: 4rem;
+  border: 1px solid;
   border-radius: 100%;
-  /* aspect-ratio: 1/1; */
   object-fit: cover;
   object-position: center;
   margin: auto 1rem;
 }
 
-.navbar{
-    font-weight: bold;
+nav{
+  background: inherit;
+}
+
+.offcanva-body{
+  background-color: var(--bg);
 }
 
 /* hero section */

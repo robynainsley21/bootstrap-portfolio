@@ -90,6 +90,7 @@ img[alt="hero-img"] {
   width: 60%;
 }
 
+
 /* about section */
 #about {
   background-color: var(--secondary);
@@ -102,6 +103,27 @@ img[alt="hero-img"] {
   margin: auto;
 }
 
+/* resume section */
+.education-card{
+  background-color: var(--primary);
+  /* padding: 0; */
+}
+
+.work-experience-box{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 2rem;
+}
+
+.resume-btn{
+  background-color: var(--bg);
+}
+
+img[alt="education-img"]{
+  width: 100%;
+}
+
 /* footer */
 footer {
   background-color: var(--secondary);
@@ -110,3 +132,10 @@ footer {
 
 /* media queries */
 /* mobile */
+@media (width < 426px){
+  /* resume section */
+  .work-experience-box{
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -18,7 +18,7 @@
   --bg: #fefcf3;
 }
 
-@property --top-left {
+/* @property --top-left {
   syntax: "<percentage>";
   inherits: false;
   initial-value: 50%;
@@ -40,7 +40,7 @@
   syntax: "<percentage>";
   inherits: false;
   initial-value: 0%;
-}
+} */
 
 header {
   background-image: url("https://robynainsley21.github.io/images/personal-portfolio/soft-bg.png");
@@ -92,7 +92,14 @@ img[alt="hero-img"] {
 
 /* about section */
 #about {
-  background-color: var(--primary);
+  background-color: var(--secondary);
+  padding: 9%;
+}
+
+#about p{
+  width: 80%;
+  text-align: center;
+  margin: auto;
 }
 
 /* footer */

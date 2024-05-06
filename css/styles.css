@@ -106,7 +106,6 @@ img[alt="hero-img"] {
 /* resume section */
 .education-card{
   background-color: var(--primary);
-  /* padding: 0; */
 }
 
 .work-experience-box{
@@ -120,8 +119,22 @@ img[alt="hero-img"] {
   background-color: var(--bg);
 }
 
-img[alt="education-img"]{
-  width: 100%;
+/* skills section */
+#skills{
+  background-color: var(--secondary);
+  padding: 5%;
+}
+
+.skills-container{
+  position: relative;
+  margin: 10%;
+}
+
+.list-unstyled:last-child{
+  text-align: end;
+  position: absolute;
+  top: 0;
+  right: 10px;
 }
 
 /* footer */

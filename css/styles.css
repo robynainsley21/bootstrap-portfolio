@@ -72,6 +72,14 @@ nav {
   background-color: var(--bg);
 }
 
+.btn{
+  border: 1px solid;
+}
+
+.card{
+  text-align: center;
+}
+
 /* hero section */
 img[alt="hero-img"] {
   width: 20rem;
@@ -149,10 +157,24 @@ img[alt="hero-img"] {
   left: 0;
 }
 
+/* testimonials section */
+.testimonial-btn{
+  background-color: var(--primary);
+  color: var(--bg);
+}
+
+button[data-bs-target="#testimonials-carousel"]{
+  background-color: var(--primary);
+  height: 2.5rem;
+  width: 2.5rem;
+  top: 30%;
+  border-radius: 50%;
+  margin: .8rem;
+}
+
 /* footer */
 footer {
   background-color: var(--secondary);
-  padding: 1rem;
 }
 
 /* media queries */

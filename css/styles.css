@@ -82,6 +82,8 @@ nav {
 
 a{
   text-decoration: none;
+  color: #000;
+  border-bottom: ;
 }
 
 /* hero section */
@@ -180,6 +182,22 @@ button[data-bs-target="#testimonials-carousel"]{
 .submit-btn{
   background-color: var(--primary);
   color: var(--bg);
+}
+
+.email-text{
+  font-family: 'Roboto', sans-serif;
+}
+
+.contact-item{
+  display: flex;
+  align-items: center;
+}
+
+.socials{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 3% ;
 }
 
 /* footer */

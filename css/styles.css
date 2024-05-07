@@ -90,51 +90,52 @@ img[alt="hero-img"] {
   width: 60%;
 }
 
-
 /* about section */
 #about {
   background-color: var(--secondary);
   padding: 9%;
 }
 
-#about p{
+#about p {
   width: 80%;
   text-align: center;
   margin: auto;
 }
 
 /* resume section */
-.education-card{
+.education-card {
   background-color: var(--primary);
 }
 
-.work-experience-box{
+.work-experience-box {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   padding: 2rem;
 }
 
-.resume-btn{
+.resume-btn {
   background-color: var(--bg);
 }
 
 /* skills section */
-#skills{
+#skills {
   background-color: var(--secondary);
   padding: 5%;
 }
 
-.skills-container{
-  position: relative;
-  margin: 10%;
+.grid-item {
+  border-radius: 10px;
+  padding: 0.5rem;
+  text-align: center;
+  margin: 5px auto;
+  width: 12rem;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
-.list-unstyled:last-child{
-  text-align: end;
-  position: absolute;
-  top: 0;
-  right: 10px;
+.grid-item > p {
+  margin: 0;
 }
 
 /* footer */
@@ -144,10 +145,10 @@ footer {
 }
 
 /* media queries */
-/* mobile */
-@media (width < 426px){
+/* mobile and tablet */
+@media (width < 769px) {
   /* resume section */
-  .work-experience-box{
+  .work-experience-box {
     display: flex;
     flex-direction: column;
   }

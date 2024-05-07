@@ -138,6 +138,17 @@ img[alt="hero-img"] {
   margin: 0;
 }
 
+/* projects section */
+#projects{
+  background-color: var(--primary);
+  padding: 2rem;
+}
+
+.carousel-control-prev{
+  position: absolute;
+  left: 0;
+}
+
 /* footer */
 footer {
   background-color: var(--secondary);

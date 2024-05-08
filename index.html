@@ -11,6 +11,15 @@
       type="image/x-icon"
     />
 
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -283,12 +292,14 @@
           <div id="testimonials-carousel" class="carousel slide mt-5 mb-4">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <div class="card m-auto " style="width: 75%">
+                <div class="card m-auto" style="width: 75%">
                   <img src="..." class="card-img-top" alt="testimonial-image1" />
                   <div class="card-body">
                     <h5 class="card-title">Student name</h5>
                     <p class="card-text">description</p>
-                    <a href="#" class="btn testimonial-btn fw-bold">Visit profile</a>
+                    <a href="#" class="btn testimonial-btn fw-bold"
+                      >Visit profile</a
+                    >
                   </div>
                 </div>
               </div>
@@ -307,8 +318,10 @@
                   <img src="..." class="card-img-top" alt="testimonial-image3" />
                   <div class="card-body">
                     <h5 class="card-title">Student name</h5>
-                    <p class="card-text"> description</p>
-                    <a href="#" class="btn testimonial-btn fw-bold">Visit profile</a>
+                    <p class="card-text">description</p>
+                    <a href="#" class="btn testimonial-btn fw-bold"
+                      >Visit profile</a
+                    >
                   </div>
                 </div>
               </div>
@@ -317,8 +330,10 @@
                   <img src="..." class="card-img-top" alt="testimonial-image4" />
                   <div class="card-body">
                     <h5 class="card-title">Student name</h5>
-                    <p class="card-text"> description</p>
-                    <a href="#" class="btn testimonial-btn fw-bold">Visit profile</a>
+                    <p class="card-text">description</p>
+                    <a href="#" class="btn testimonial-btn fw-bold"
+                      >Visit profile</a
+                    >
                   </div>
                 </div>
               </div>
@@ -327,8 +342,10 @@
                   <img src="..." class="card-img-top" alt="testimonial-image5" />
                   <div class="card-body">
                     <h5 class="card-title">Student name</h5>
-                    <p class="card-text"> description</p>
-                    <a href="#" class="btn testimonial-btn fw-bold">Visit profile</a>
+                    <p class="card-text">description</p>
+                    <a href="#" class="btn testimonial-btn fw-bold"
+                      >Visit profile</a
+                    >
                   </div>
                 </div>
               </div>
@@ -367,7 +384,7 @@
           <div id="projects-carousel" class="carousel slide mt-5 mb-4">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <div class="card m-auto " style="width: 75%">
+                <div class="card m-auto" style="width: 75%">
                   <img src="..." class="card-img-top" alt="project-image" />
                   <div class="card-body">
                     <h5 class="card-title">Project name</h5>
@@ -435,36 +452,70 @@
         </div>
       </section>
 
-      <section class="container-fluid" id="contact">
+      <section class="container-fluid p-4" id="contact">
         <div class="row">
           <h2 class="display-2 text-center">Contact</h2>
         </div>
         <div class="row mb-3">
-          <form action="https://formspree.io/f/xoqoydae" method="POST">
+          <form
+            class="col-md-6 col-sm-12"
+            action="https://formspree.io/f/xwkgyjal"
+            method="POST"
+          >
+            <div class="mb-3">
+              <label for="exampleInputName1" class="form-label"
+                >Your name:</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="exampleInputName1"
+                aria-describedby="emailHelp"
+                required
+              />
+            </div>
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label"
-                >Email address</label
+                >Your email:</label
               >
               <input
                 type="email"
                 class="form-control"
                 id="exampleInputEmail1"
                 aria-describedby="emailHelp"
+                required
               />
             </div>
             <div class="mb-3">
-              <label class="form-label">Message</label>
+              <label class="form-label">Your message:</label>
               <input
                 type="text"
                 class="form-control"
                 id="exampleInputPassword1"
               />
             </div>
-            <button type="submit" class="btn">Submit</button>
+            <button type="submit" class="btn submit-btn fw-bold">Submit</button>
           </form>
+          <div class="col-lg-6 col-md-6 col-sm-12 p-lg-3 socials">
+            <div class="contact-item">
+              <i class=" fa-brands fa-linkedin fa-2x" style="color: #dba39a"></i>
+              <a class="m-2 border-bottom" href="https://www.linkedin.com/in/robyn-carnow-2b0762267/"
+                >My LinkedIn</a
+              >
+            </div>
+            <div class="contact-item">
+              <i class="fa-brands fa-github fa-2x" style="color: #dba39a"></i>
+              <a class="m-2 border-bottom" href="https://github.com/robynainsley21">My GitHub</a>
+            </div>
+            <div class="contact-item">
+              <i class="fa-solid fa-envelope fa-2x" style="color: #dba39a"></i>
+              <span class="email-text m-2">robynainsley21@gmail.com</span>
+            </div>
+          </div>
         </div>
       </section>
     </main>
+
     <footer class="container-fluid mx-auto">
       <div class="row">
         <p class="lead text-center">

@@ -83,7 +83,6 @@ nav {
 a{
   text-decoration: none;
   color: #000;
-  border-bottom: ;
 }
 
 /* hero section */
@@ -197,7 +196,7 @@ button[data-bs-target="#testimonials-carousel"]{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 3% ;
+  padding: 3%;
 }
 
 /* footer */

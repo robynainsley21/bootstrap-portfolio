@@ -54,6 +54,34 @@ body {
   font-family: "Julius Sans One", sans-serif;
 }
 
+.pink-btn{
+  background-color: var(--primary);
+  color: var(--bg);
+
+  &:hover{
+    border: 1px solid;
+  }
+}
+
+.btn{
+  border: 1px solid;
+}
+
+.card{
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+.flex-parent{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 /* navbar */
 img[alt="logo"] {
   width: 4rem;
@@ -72,19 +100,6 @@ nav {
   background-color: var(--bg);
 }
 
-.btn{
-  border: 1px solid;
-}
-
-.card{
-  text-align: center;
-}
-
-a{
-  text-decoration: none;
-  color: #000;
-}
-
 /* hero section */
 img[alt="hero-img"] {
   width: 20rem;
@@ -94,6 +109,7 @@ img[alt="hero-img"] {
 #hero {
   display: flex;
   justify-content: space-around;
+  margin: auto;
   padding: 9%;
   align-items: center;
   width: 100vw;
@@ -157,17 +173,20 @@ img[alt="hero-img"] {
   padding: 2rem;
 }
 
+img[alt="project-image"]{
+  height: 9rem;
+  width: auto;
+  object-fit: contain;
+  aspect-ratio: 1 /1;
+  margin: .5rem;
+}
+
 .carousel-control-prev{
   position: absolute;
   left: 0;
 }
 
 /* testimonials section */
-.testimonial-btn{
-  background-color: var(--primary);
-  color: var(--bg);
-}
-
 button[data-bs-target="#testimonials-carousel"]{
   background-color: var(--primary);
   height: 2.5rem;
@@ -181,6 +200,10 @@ button[data-bs-target="#testimonials-carousel"]{
 .submit-btn{
   background-color: var(--primary);
   color: var(--bg);
+  
+  &:hover{
+    border: 1px solid;
+  }
 }
 
 .email-text{
@@ -207,6 +230,11 @@ footer {
 /* media queries */
 /* mobile and tablet */
 @media (width < 769px) {
+  /* hero */
+  #hero{
+    padding-top: 30%;
+  }
+
   /* resume section */
   .work-experience-box {
     display: flex;

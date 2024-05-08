@@ -175,8 +175,9 @@ img[alt="hero-img"] {
 
 img[alt="project-image"]{
   height: 9rem;
+  width: auto;
   object-fit: contain;
-  /* aspect-ratio: 1 /1; */
+  aspect-ratio: 1 /1;
   margin: .5rem;
 }
 

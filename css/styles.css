@@ -173,6 +173,7 @@ img[alt="hero-img"] {
 #skills {
   background-color: var(--secondary);
   padding: 5%;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3), 0px -10px 15px rgba(0, 0, 0, 0.3);
 }
 
 #skills .row {
@@ -202,14 +203,7 @@ img[alt="hero-img"] {
 #projects {
   background-color: var(--primary);
   padding: 2rem;
-  transition: all 0.3s ease;
-  perspective: 1000px;
-
-  &:hover {
-    cursor: pointer;
-    transform: translateY(-20px) rotateX(5deg);
-    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
-  }
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3), 0px -10px 15px rgba(0, 0, 0, 0.3);
 }
 
 img[alt="project-image"] {

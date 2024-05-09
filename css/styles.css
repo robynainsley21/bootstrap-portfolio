@@ -54,30 +54,30 @@ body {
   font-family: "Julius Sans One", sans-serif;
 }
 
-.pink-btn{
+.pink-btn {
   background-color: var(--primary);
   color: var(--bg);
 
-  &:hover{
+  &:hover {
     border: 1px solid;
   }
 }
 
-.btn{
+.btn {
   border: 1px solid;
 }
 
-.card{
+.card {
   text-align: center;
   overflow: hidden;
 }
 
-a{
+a {
   text-decoration: none;
   color: #000;
 }
 
-.flex-parent{
+.flex-parent {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -124,6 +124,14 @@ img[alt="hero-img"] {
 #about {
   background-color: var(--secondary);
   padding: 9%;
+  transition: all 0.3s ease;
+  perspective: 1000px;
+
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-20px) rotateX(5deg);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+  }
 }
 
 #about p {
@@ -135,6 +143,11 @@ img[alt="hero-img"] {
 /* resume section */
 .education-card {
   background-color: var(--primary);
+
+  &:hover {
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.07);
+  }
 }
 
 .work-experience-box {
@@ -146,6 +159,14 @@ img[alt="hero-img"] {
 
 .resume-btn {
   background-color: var(--bg);
+  border: 1px solid;
+
+  &:hover {
+    background-color: var(--primary);
+    border: 1px solid var(--bg);
+    font-weight: bold;
+    color: var(--bg);
+  }
 }
 
 /* skills section */
@@ -154,14 +175,23 @@ img[alt="hero-img"] {
   padding: 5%;
 }
 
+#skills .row {
+  gap: 0.6rem;
+}
+
 .grid-item {
   border-radius: 10px;
   padding: 0.5rem;
   text-align: center;
-  margin: 5px auto;
-  width: 12rem;
+  margin: 1rem auto;
+  width: 11rem;
   box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
     rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+  &:hover {
+    transition: all 0.3s;
+    transform: scale(1.1);
+  }
 }
 
 .grid-item > p {
@@ -169,65 +199,101 @@ img[alt="hero-img"] {
 }
 
 /* projects section */
-#projects{
+#projects {
   background-color: var(--primary);
   padding: 2rem;
+  transition: all 0.3s ease;
+  perspective: 1000px;
+
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-20px) rotateX(5deg);
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+  }
 }
 
-img[alt="project-image"]{
+img[alt="project-image"] {
   height: 9rem;
   width: auto;
   object-fit: contain;
   aspect-ratio: 1 /1;
-  margin: .5rem;
+  margin: 0.5rem;
 }
 
-.carousel-control-prev{
+.carousel-control-prev {
   position: absolute;
   left: 0;
 }
 
 /* testimonials section */
-button[data-bs-target="#testimonials-carousel"]{
+button[data-bs-target="#testimonials-carousel"] {
   background-color: var(--primary);
   height: 2.5rem;
   width: 2.5rem;
   top: 30%;
   border-radius: 50%;
-  margin: .8rem;
+  margin: 0.8rem;
 }
 
-img[alt="testimonial-image"]{
+img[alt="testimonial-image"] {
   height: 10rem;
   width: auto;
   object-fit: contain;
 }
 
-.scrollable-text{
+.scrollable-text {
   height: 200px;
   overflow-y: auto;
 }
 
 /* contact section */
-.submit-btn{
+.submit-btn {
   background-color: var(--primary);
   color: var(--bg);
-  
-  &:hover{
+
+  &:hover {
     border: 1px solid;
   }
 }
 
-.email-text{
-  font-family: 'Roboto', sans-serif;
+.email-text {
+  font-family: "Roboto", sans-serif;
 }
 
-.contact-item{
+.contact-item {
   display: flex;
   align-items: center;
 }
 
-.socials{
+.contact-clickable {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  width: 10rem;
+
+  position: relative;
+  top: -6px;
+  border: 0;
+  transition: all 40ms linear;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 2px;
+  margin-right: 2px;
+
+  &:active:focus,
+  :focus:hover,
+  focus {
+    outline: medium none;
+  }
+
+  &:active {
+    top: 2px;
+  }
+}
+
+.socials {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -243,7 +309,7 @@ footer {
 /* mobile and tablet */
 @media (width < 769px) {
   /* hero */
-  #hero{
+  #hero {
     padding-top: 30%;
   }
 

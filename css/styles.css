@@ -83,6 +83,10 @@ a {
   justify-content: center;
 }
 
+.icon{
+  color: var(--primary);
+}
+
 /* navbar */
 img[alt="logo"] {
   width: 4rem;
@@ -143,6 +147,7 @@ img[alt="hero-img"] {
 /* resume section */
 .education-card {
   background-color: var(--primary);
+  height: 34rem;
 
   &:hover {
     transition: all 0.5s ease-in-out;
@@ -150,8 +155,13 @@ img[alt="hero-img"] {
   }
 }
 
+.resume-card{
+  width: 17rem;
+}
+
 .work-experience-box {
   display: flex;
+  flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
   padding: 2rem;
@@ -219,6 +229,17 @@ img[alt="project-image"] {
   left: 0;
 }
 
+.project-card{
+  width: 75%;
+  height: 25rem;
+}
+
+.project-description{
+  height: 100px;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
 /* testimonials section */
 button[data-bs-target="#testimonials-carousel"] {
   background-color: var(--primary);
@@ -238,6 +259,10 @@ img[alt="testimonial-image"] {
 .scrollable-text {
   height: 200px;
   overflow-y: auto;
+}
+
+.testimonial-card{
+  width: 17rem;
 }
 
 /* contact section */
@@ -305,11 +330,5 @@ footer {
   /* hero */
   #hero {
     padding-top: 30%;
-  }
-
-  /* resume section */
-  .work-experience-box {
-    display: flex;
-    flex-direction: column;
   }
 }
